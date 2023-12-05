@@ -1,6 +1,4 @@
-# Lab4
-
-http://localhost:4444/wd/hub/static/resource/hub.html
+# autotests-lab45
 
 Этот проект был сгенерирован с помощью [Angular CLI](https://github.com/angular/angular-cli ) версия 12.2.13.
 
