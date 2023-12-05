@@ -32,3 +32,6 @@ replay_pid*
 *.iws
 *.iml
 *.ipr
+
+# node_modules
+autotests-lab45/node_modules
