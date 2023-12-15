@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "c1e53ffb-c3b8-40a0-9770-1569bd1dffc1",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24602051"
+	},
+	"item": [
+		{
+			"name": "subtraction",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get answer\", function () {\r",
+							"    pm.response.to.have.body('218.0');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/subtraction?system=10&num1=220&num2=2",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"subtraction"
+					],
+					"query": [
+						{
+							"key": "system",
+							"value": "10"
+						},
+						{
+							"key": "num1",
+							"value": "220"
+						},
+						{
+							"key": "num2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multiplication",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get answer\", function () {\r",
+							"    pm.response.to.have.body('2.22584574E8');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/multiplication?system=10&num1=10011&num2=22234",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"multiplication"
+					],
+					"query": [
+						{
+							"key": "system",
+							"value": "10"
+						},
+						{
+							"key": "num1",
+							"value": "10011"
+						},
+						{
+							"key": "num2",
+							"value": "22234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addition",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get answer\", function () {\r",
+							"    pm.response.to.have.body('32245.0');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/addition?system=10&num1=10011&num2=22234",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"addition"
+					],
+					"query": [
+						{
+							"key": "system",
+							"value": "10"
+						},
+						{
+							"key": "num1",
+							"value": "10011"
+						},
+						{
+							"key": "num2",
+							"value": "22234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "division",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get answer\", function () {\r",
+							"    pm.response.to.have.body('10.0');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/division?num1=100&num2=10&system=10",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"division"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "100"
+						},
+						{
+							"key": "num2",
+							"value": "10"
+						},
+						{
+							"key": "system",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByDate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/findByDate?endDate=2023-12-12&startDate=2023-09-09",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"findByDate"
+					],
+					"query": [
+						{
+							"key": "endDate",
+							"value": "2023-12-12"
+						},
+						{
+							"key": "startDate",
+							"value": "2023-09-09"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByParameters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status positive test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status fail test\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/calculations/findByParameters?endDate=2023-12-12&numberSystemOne=2&numberSystemTwo=2&operationName=ADDITION&startDate=2023-09-09",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"calculations",
+						"findByParameters"
+					],
+					"query": [
+						{
+							"key": "endDate",
+							"value": "2023-12-12"
+						},
+						{
+							"key": "numberSystemOne",
+							"value": "2"
+						},
+						{
+							"key": "numberSystemTwo",
+							"value": "2"
+						},
+						{
+							"key": "operationName",
+							"value": "ADDITION"
+						},
+						{
+							"key": "startDate",
+							"value": "2023-09-09"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"port = pm.environment.get(\"port\")",
+					"host = pm.environment.get(\"host\")",
+					"protocol = pm.environment.get(\"protocol\")",
+					"pm.environment.set(\"url\", protocol+\"://\"+host+\":\"+port);"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
